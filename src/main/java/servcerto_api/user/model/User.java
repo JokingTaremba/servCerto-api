@@ -45,7 +45,7 @@ public class User {
     @Column(nullable = false)
     private UserRole role = UserRole.CLIENT;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
     private Address address;
 
