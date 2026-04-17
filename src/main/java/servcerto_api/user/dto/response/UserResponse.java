@@ -2,14 +2,14 @@ package servcerto_api.user.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import servcerto_api.address.dto.response.AddressResponseDto;
+import servcerto_api.address.dto.response.AddressResponse;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Getter
 @AllArgsConstructor
-public class UserResponseDto {
+public class UserResponse {
 
     private UUID id;
     private String name;
@@ -18,7 +18,7 @@ public class UserResponseDto {
     private String secondaryPhone;
     private String profileImage;
     private String role;
-    private AddressResponseDto address;
+    private AddressResponse address;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }

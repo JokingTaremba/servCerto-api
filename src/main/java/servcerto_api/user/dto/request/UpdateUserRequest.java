@@ -1,13 +1,16 @@
 package servcerto_api.user.dto.request;
 
-import lombok.*;
-import servcerto_api.address.dto.request.CreateAddressRequestDto;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import servcerto_api.address.dto.request.CreateAddressRequest;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateUserRequestDto {
+public class UpdateUserRequest {
 
     private String name;
     private String email;
@@ -16,5 +19,5 @@ public class CreateUserRequestDto {
     private String password;
     private String profileImage;
     private String role;
-    private CreateAddressRequestDto address;
+    private CreateAddressRequest address;
 }

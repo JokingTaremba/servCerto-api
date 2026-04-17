@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Getter
 @AllArgsConstructor
-public class AddressResponseDto {
+public class AddressResponse {
 
     private UUID id;
     private String street;

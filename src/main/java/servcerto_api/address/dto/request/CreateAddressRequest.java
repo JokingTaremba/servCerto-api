@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateAddressRequestDto {
+public class CreateAddressRequest {
     private String street;
     private String city;
     private String state;
